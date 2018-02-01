@@ -1,4 +1,8 @@
-const API_KEY = 'ProvideYourOwn!!!';
+import './style.css'
+require("html-loader?attrs=img:data-src!./index.html");
+
+
+const API_KEY = 'KhHayXgP88Gdcqfv0cguPXd5ZbvwezWm';
 const baseUrl = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}`;
 
 const gifForm = document.querySelector('#gif-form');
