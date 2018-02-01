@@ -1,43 +1,43 @@
 body {
-    background: rgb(42, 42, 43);
+    background: rgb(162, 162, 165);
     margin: 0;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-}
-.container {
+  }
+  .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
-}
-
-#gif-form {
+  }
+  
+  #gif-form {
     padding: 1rem 0;
-}
-#gif-search-input {
+  }
+  #gif-search-input {
     font-size: 1.5rem;
-}
-
-#gif-search-button {
+  }
+  
+  #gif-search-button {
     font-size: 1.5rem;
-    background: #4CAF50;
+    background: rgb(71, 70, 161);
     color: white;
     border: none;
-}
-
-#gif-container {
+  }
+  
+  #gif-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#gif-container img {
-    max-width: 100%;
-    border: 3px solid mistyrose;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+  
+  #gif-container img {
+    width: 95%;
+    height: 95%;
+    border: 3px solid rgb(245, 238, 238);
     border-radius: 2%;
-}
-
-#gif-container p {
-    text-align: center;
-    color: goldenrod;
-}
+  }
+  
+  ol {
+    list-style-type: none;
+  }
