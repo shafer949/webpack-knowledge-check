@@ -5,8 +5,8 @@ module.exports = {
   entry: './src/app.js',
   plugins: [
     new HtmlWebpackPlugin({
-        title: 'Output Management',
-        filename: 'bundle.html'
+        title: 'Webpack App',
+        filename: 'test.html'
       })
   ],
   output: {
@@ -17,6 +17,7 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
+  watch: true,
   module: {
     rules: [
         { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
@@ -27,12 +28,7 @@ module.exports = {
                'css-loader'
              ]
         },
-        {
-            test: /\.(html)$/,
-            use: {
-              loader: 'html-loader'
-            }
-        }
+        { test: /\.gif$/, use: [ "url-loader?mimetype=image/gif" ] }
     ]
    }
 };
