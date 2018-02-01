@@ -6,19 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Webpack H2T</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="container">
-            <form id="gif-form">
-                <input id="search-input" type="text" placeholder="Get yo search on!"/>
-                <button id="search-button">search</button>
-            </form>
-            <div id="gif-container">
-                <img src="https://media.giphy.com/media/xUPGGDNsLvqsBOhuU0/giphy.gif" alt="giphy"/>
-                <p>https://media.giphy.com/media/xUPGGDNsLvqsBOhuU0/giphy.gif</p>
-            </div>
-        </div>
+    <div id='root'></div>
     <script src='./app.js'></script>
 </body>
 </html>
