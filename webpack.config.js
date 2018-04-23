@@ -20,7 +20,7 @@ module.exports = {
   watch: true,
   module: {
     rules: [
-        { test: [/\.js$/,/\.es6$/], exclude: /node_modules/, loader: "babel-loader" },
+        { test: [/\.js$/], exclude: /node_modules/, loader: "babel-loader" },
         {
              test: /\.css$/,
              use: [
